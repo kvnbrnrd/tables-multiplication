@@ -2,8 +2,10 @@ body{
     background-color: rgb(248, 245, 213);
     font-family: fantasy;
     font-size: larger;
+    margin-left: 520px;
 }
 .multi{
-    color:rgba(209, 192, 161, 0.753);
-    margin-left: 650px;
+    color:rgba(230, 162, 36, 0.904);
+    margin-left: 150px;
+  
 }
