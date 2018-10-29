@@ -2,18 +2,18 @@
 
 <FORM>
     <h2>Affichage de plusieurs tables à la fois :</h2>
-    
+
     <input type="hidden" name="categorie" id="categorie">
     <input type="checkbox"  value="1"> Table du 1
-    <input type="checkbox"  value="1"> Table du 2
-    <input type="checkbox"  value="1"> Table du 3
-    <input type="checkbox"  value="1"> Table du 4
-    <input type="checkbox"  value="1"> Table du 5</p>
-    <input type="checkbox"  value="1"> Table du 6
-    <input type="checkbox"  value="1"> Table du 7
-    <input type="checkbox"  value="1"> Table du 8
-    <input type="checkbox"  value="1"> Table du 9
-    <input type="checkbox"  value="1"> Table du 10</p>
+    <input type="checkbox"  value="2"> Table du 2
+    <input type="checkbox"  value="3"> Table du 3
+    <input type="checkbox"  value="4"> Table du 4
+    <input type="checkbox"  value="5"> Table du 5</p>
+    <input type="checkbox"  value="6"> Table du 6
+    <input type="checkbox"  value="7"> Table du 7
+    <input type="checkbox"  value="8"> Table du 8
+    <input type="checkbox"  value="9"> Table du 9
+    <input type="checkbox"  value="10"> Table du 10</p>
     </FORM>
     <select name="choix">
 
