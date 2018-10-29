@@ -1,4 +1,11 @@
+body{
+    background-color: rgb(248, 245, 213);
+    font-family: fantasy;
+    font-size: larger;
+    margin-left: 520px;
+}
 .multi{
-    color:rgba(61, 64, 207, 0.411);
-    margin-left: 700px;
+    color:rgba(230, 162, 36, 0.904);
+    margin-left: 150px;
+  
 }
