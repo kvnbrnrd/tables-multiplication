@@ -93,6 +93,18 @@ if(isset($_POST['table']))
 
 <!-- Fin PHP formulaire checkbox -->
 
+<!-- Début mode révision -->
+
+<h3>Révisez en jouant ! Trouvez la bonne réponse.</h3>
+
+<input type="text" method="post" placeholder="Entrez votre réponse ici..."></p>
+<input type="submit" method="post" value="Valider" /></p>
+
+
+<?php
+echo rand(0, 10);
+?>
+
 
 </body>
 </html>
