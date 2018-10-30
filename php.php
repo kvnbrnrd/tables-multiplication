@@ -41,9 +41,7 @@
 if(isset($_POST["choix"])){ 
 for ($j = 1; $j <= 10; $j++)
     {
-        
-        echo $_POST["choix"].' x '.$j.' = '. $_POST["choix"]*$j.'<br>';
-        
+        echo $_POST["choix"].' x '.$j.' = '. $_POST["choix"]*$j.'<br>';  
     }
 }
 ?>
@@ -73,7 +71,8 @@ for ($j = 1; $j <= 10; $j++)
 <!-- Début PHP formulaire checkbox  -->
 
     <?php
-if(isset($_POST['table'])) {
+if(isset($_POST['table'])) 
+{
     foreach($_POST['table'] as $valeur)
     {
         for ($num=1; $num <= 10; $num++) 
