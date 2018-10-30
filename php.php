@@ -14,6 +14,7 @@
     <input type="checkbox"  value="8"> Table du 8
     <input type="checkbox"  value="9"> Table du 9
     <input type="checkbox"  value="10"> Table du 10</p>
+    <button type="submit" formmethod="post">Valider</button></p>
     </FORM>
     <select name="choix">
 
@@ -42,9 +43,23 @@
 
 <?php
 
+// for ($j = 1; $j <= 10; $j++)
+//     {
+//         echo '3'.' x '.$j.' = '. 3*$j.'<br>';
+//     }
+
+// $arr =
+
 for ($i = 1; $i <= 10; $i++)
 {
-    echo 'Table de multiplication de '.$i.'<br>';
+    if($_POST['choix1'] == $i) {
+        echo '<p class="show">Table de multiplication de '.$i.'</p>'; 
+    }
+    else {
+        echo '<p class="hidden">Table de multiplication de '.$i.'</p>';
+    }
+
+   
     for ($j = 1; $j <= 10; $j++)
     {
         echo $i.' x '.$j.' = '.$i*$j.'<br>';
