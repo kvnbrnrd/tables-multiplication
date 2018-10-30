@@ -30,7 +30,7 @@
 
     <?php
 
-    $num = $_POST['check']; 
+    $truc = isset($_POST['truc']) ? $_POST['truc'] : NULL;
     foreach($_POST['table'] as $valeur){
     for ($num=1; $num <= 10; $num++) {
     if ($num == 10){
