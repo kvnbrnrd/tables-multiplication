@@ -1,8 +1,10 @@
 body{
     background-color: rgb(248, 245, 213);
-    font-family: fantasy;
+    font-family: monospace;
     font-size: larger;
     margin-left: 520px;
+    overflow: auto ;
+	padding: 5px 0 0 5px ;
 }
 .multi{
     color:rgba(230, 162, 36, 0.904);

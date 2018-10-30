@@ -1,3 +1,5 @@
+<PHP?> <link rel="stylesheet" type="text/css" href="index2.css"></head> <PHP>
+
 <h1 class="multi">Multiplications</h1>
 
 <FORM>
@@ -42,7 +44,7 @@
 
 <?php
 
-for ($i = 1; $i <= 10; $i++)
+for ($i = 1; $i <= 1; $i++)
 {
     echo 'Table de multiplication de '.$i.'<br>';
     for ($j = 1; $j <= 10; $j++)
