@@ -1,14 +1,17 @@
 body{
     background-color: rgb(248, 245, 213);
     font-family: monospace;
-  
-    margin-left: 520px;
+    background-image: url("yes.jpg");
+    background-size: cover;
+    margin-left: 380px;
     overflow: auto ;
-	padding: 5px 0 0 5px ;
+    padding: 5px 0 0 5px ;
+    color:white;
+    font-size: 150%;
 }
 .multi{
     color:rgba(230, 162, 36, 0.904);
-    margin-left: 50px;
+    margin-left: 160px;
     font-family: 'lobster';
-    font-size: 55px;
+    font-size: 60px;
 }
