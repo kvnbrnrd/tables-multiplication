@@ -11,7 +11,7 @@
 <h1 class="multi">Multiplications</h1>
 
     <form name="check" action="" method="post">
-    <h2>Affichage de plusieurs tables à la fois :</h2>
+    <h2 class="h2">Affichage de plusieurs tables à la fois :</h2>
         
         <input type="checkbox" name="table[]" value="1"> <label for="un">Table de 1</label>
         <input type="checkbox" name="table[]" value="2"> <label for="deux">Table de 2</label>
