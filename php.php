@@ -1,3 +1,5 @@
+<PHP?> <link rel="stylesheet" type="text/css" href="index2.css"></head> <PHP>
+
 <h1 class="multi">Multiplications</h1>
 
 <FORM>
@@ -43,6 +45,7 @@
 
 <?php
 
+
 // for ($j = 1; $j <= 10; $j++)
 //     {
 //         echo '3'.' x '.$j.' = '. 3*$j.'<br>';
@@ -51,6 +54,7 @@
 // $arr =
 
 for ($i = 1; $i <= 10; $i++)
+
 {
     if($_POST['choix1'] == $i) {
         echo '<p class="show">Table de multiplication de '.$i.'</p>'; 
