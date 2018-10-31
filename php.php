@@ -39,6 +39,8 @@
 
 <?php
 if(isset($_POST["choix"])){ 
+    $_GET['table'] = 0;
+
 for ($j = 1; $j <= 10; $j++)
     {
         echo $_POST["choix"].' x '.$j.' = '. $_POST["choix"]*$j.'<br>';  
@@ -95,15 +97,55 @@ if(isset($_POST['table']))
 
 <!-- Début mode révision -->
 
-<h3>Révisez en jouant ! Trouvez la bonne réponse.</h3>
+<h3>Révisez en jouant !<br>
+Choisissez une table de multiplication et trouvez la bonne réponse.</h3>
 
-<input type="text" method="post" placeholder="Entrez votre réponse ici..."></p>
-<input type="submit" method="post" value="Valider" /></p>
+<form method="post">
+    <select name="stock">
 
+        <option value="1">Table du 1</option>
+        <option value="2">Table du 2</option>
+        <option value="3">Table du 3</option>
+        <option value="4">Table du 4</option>
+        <option value="5">Table du 5</option>
+        <option value="6">Table du 6</option>
+        <option value="7">Table du 7</option>
+        <option value="8">Table du 8</option>
+        <option value="9">Table du 9</option>
+        <option value="10">Table du 10</option>
+        
+    </select>
+
+    <input type="submit" method="post" value="Valider" />
+</form>
 
 <?php
-echo rand(0, 10);
-?>
+
+
+if(isset($_POST['stock'])) //étape choix table
+{
+    $random = rand(1,10);
+    $resultat = $_POST['stock'] * $random; 
+    echo $_POST["stock"].' x '.$random.'<br>';
+
+}
+else if(isset($_POST['reponse'])) { //étape résultat envoyé
+    if($_POST['reponse'] === $_POST['bonnereponse'])
+    {
+        echo "Bonne réponse !";
+    }
+    else 
+    {
+        echo "Mauvaise réponse !";
+    }
+}
+?></p>
+
+<form method="post" id="reponse">
+    <input type="hidden" name="bonnereponse" value="<?php echo $resultat ?>">
+    <input name="reponse" type="text" method="post" placeholder="Exemple : 20"></p>
+    <input type="submit" method="post" value="Valider votre réponse" /></p>
+</form>
 
 
 </body>
